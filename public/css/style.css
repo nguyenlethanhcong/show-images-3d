@@ -68,3 +68,22 @@ dt {
 	background: -o-radial-gradient(bottom,circle farthest-side,#0000,#000 66%);
 	background: radial-gradient(bottom,circle farthest-side,#0000,#000 66%);
 }
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    } to{
+        transform: rotateY(360deg);
+    }
+}
