@@ -10,7 +10,9 @@
 	user-select: none;
 }
 body{
-	background:#000;
+	position: relative;
+    background-color: #000;
+    overflow: hidden;
 }
 dl {
 	width: 230px;
@@ -68,6 +70,11 @@ dt {
 	background: -o-radial-gradient(bottom,circle farthest-side,#0000,#000 66%);
 	background: radial-gradient(bottom,circle farthest-side,#0000,#000 66%);
 }
+.name{
+	color: #fff;
+	text-align: center;
+	margin-top: 400px;
+}
 .content-carrousel{
     width: 100%;
     position: absolute;
@@ -86,4 +93,22 @@ dt {
     } to{
         transform: rotateY(360deg);
     }
+}
+@media(min-width: 300px){
+	dd {
+		width: 200px;
+		height: 310px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+@media(min-width: 1200px){
+	dd {
+		width: 230px;
+		height: 340px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
